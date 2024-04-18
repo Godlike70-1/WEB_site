@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fill form</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: maroon;
+            margin: 0;
+            padding: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            }
+            .here{
+                background-color: lightblue;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px black;
+            }
+            input[type="name"],
+            input[type="last name"],
+            input[type="email"],
+            input[type="submit"]{
+                border-radius: 8px;
+                padding: 5px;
+                box-sizing: border-box;
+            }
+            input[type="submit"]{
+                width: 100px;
+                margin: 10px;
+                padding: 5px;
+                cursor: pointer;
+                background-color: blanchedalmond;
+                transition: background-color 0.5s ease;
+            }
+            .submit:hover{
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="here">
+            <h2>Fill up form</h2>
+            <form action="">
+                <label for="name">Name:</label><br>
+                <input type="name"><br>
+                <label for="last name">last name:</label><br>
+                <input type="last name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email"><br>
+                <center><input class="submit" value="Submit" type="submit"></center>
+            </form>
+        </div>
+    </body>
+</html>
