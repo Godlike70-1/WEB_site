@@ -1,67 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        form{
-            background-color: aquamarine;
-        }
-        header{
-            background-color: blueviolet;
-            padding: 20px;
-        }
-        main h2{
-            background-color: green;
-            padding: 10px;
-        }
-        main form{
-            padding: 100px;
-            background-color: bisque;
-        }
-        footer{
-            background-color: black;
-            color: white;
-            padding: 50px;
-        }
-        *{
-            margin: 0;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicing -Godlike</title>
-</head>
-<body>
-    <header><center><h1>This is Practice</h1></center></header>
-    <main><center>
-        <h2>Fill up the form</h2>
-        <form action="post">
-            <div>
-            <label for="firstname">First name:</label>
-            <input type="text" name="first" id="email" placeholder="first name">
-            </div>
-            <label for="lastname">last name:</label>
-            <input type="text" name="last" id="lastname" placeholder="Last name">
-            <div>
-            <label for="male">male</label>
-            <input type="radio" name="gender" id="male" value="male">
-            <label for="female">female</label>
-            <input type="radio" name="gender" id="female" value="female">
-            </div>
-            <div>
-                <label for="email">Enter email:</label>
-                <input type="email" name="gmail" id="email" placeholder="email">
-                <br>
-                <label for="password">Enter password:</label>
-                <input type="password" name="pass" id="password" placeholder="password">
-            </div>
-            <div>
-                <label for="robot">Are you a human?</label>
-                <input type="checkbox" id="robot">
-            </div>
-        </form>
-    </center></main>
-    <footer>
-        <center>ALL RIGHTS RESERVED</center>
-    </footer>
-</body>
+<html>
+    <head>
+        <title>Practice -full stack web developer</title>
+        <style>
+            p{
+                background-color: darkmagenta;
+                color: beige;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            td{
+                border: 2px solid black;
+                padding: 10px;
+            }
+            th{
+                border: 2px solid black;
+                padding: 10px;
+            }
+            tr{
+                padding: 0px;
+            }
+        </style>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body style="background-color: lightgreen">
+        <header>
+            <center><h1>Godlike</h1></center>
+            <center> <img src="images.jpg" alt="Godlike image"></center>
+            <p><font size="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quam nostrum quisquam illum, minus fugit ipsa deserunt, magni accusantium nisi ex nemo aperiam. Ipsam, iste quam. Eligendi veniam ea explicabo!</font></p>
+        </header>
+        <main>
+            <center>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Section</th>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>19</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Don</td>
+                        <td>10</td>
+                        <td>B</td>
+                    </tr>
+                </table>
+            </center>
+            <h2 style="background-color: black; color: beige;">Lists of criminals</h2>
+            <ol>
+                <li>manzil</li>
+                <li>ram</li>
+                <li>shyam</li>
+                <li>shiva</li>
+            </ol>
+            <ul type="square">
+                <li>Dota</li>
+                <li>PUBG</li>
+                <li>ABO</li>
+            </ul>
+            <dl>
+                <dt>Html</dt>
+                <dd>html is not a programming language.</dd>
+                <dt>Css</dt>
+                <dd>Css is just used for designing and making website attractice</dd>
+                <dt>Java script</dt>
+                <dd>Js is most important language because it is used for making website interactive to users.</dd>
+            </dl>
+           <center> <img src="images.jpg" alt="Anonymous image" width="100px" height="100px"></center>
+           <marquee behavior="slide" direction="right" bgcolor="grey" scrollamount="10" loop="100" scrolldelay="100" width="10000px" height="100px">Hello! welcome to my website.</marquee>
+           <marquee behavior="scroll" direction="left" scrollamount="5" scrolldelay="100">Scrolling Text</marquee>
+           <form action="">
+            <center>
+                <label for="name">Email:</label>
+                <input type="email" name="mail" id="email"> <br>
+                <label for="Password">Password:</label>
+                <input type="password" name="password" id="password"><br>
+                <input type="button" value="submit">
+            </center>
+           </form>
+        </main>
+    </body>
 </html>
