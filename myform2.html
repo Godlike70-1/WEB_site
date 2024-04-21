@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Form-practice</title>
+        <style>
+            body{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-family: fantasy;
+                text-align:center;
+            }
+            marquee{
+                background-color:darkblue;
+                border-radius:8px;
+            }
+            div{
+                border-radius: 8px;
+            }
+            .hint{
+                background-color:cornflowerblue;
+                color:whitesmoke;
+                box-shadow: 0 2px 5px;
+                height:400px;
+                width:300px;
+            }
+            .form{
+                border-radius:5px;
+            }
+            .submit{
+                border-radius: 6px;
+                width:100px;
+                height:25px;
+            }
+            .submit:hover{
+                background-color:cornflowerblue;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hint">
+            <marquee direction="left" behaviour="scroll" loop="-1">Online Driving liscene form!!</marquee>
+            <label for="text">Name:</label><br>
+            <input type="text" class="form"><br>
+            <label for="text">Last Name</label><br>
+            <input type="text" class="form"><br>
+            <label for="number">Phone no.</label><br>
+            <input type="number" class="form"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" class="form"><br>
+            <label for="number">Age:</label><br>
+            <input type="number" class="form" id="age" min="18" max="60"><br>
+            <label for="text">Address:</label><br>
+            <input type="text" class="form"><br>
+            <input type="submit" class="submit">
+        </div>
+    </body>
+</html>
