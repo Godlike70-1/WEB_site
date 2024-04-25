@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day 1</title>
+    <title>form-to-submit</title>
     <style>
-        body{
-            padding: 0%;
-            background-color: grey;
+        img{
+            float: right;
+            margin-right: 10px;
         }
-        a{
-            background-color: green;
+        form{
+            background-color:cadetblue;
+            border: 2px solid black;
+        }
+        .submit{
+            background-color: aquamarine;
+            border-radius: 6px;
+            width: 100px;
+            height: 25px;
+        }
+        .submit:hover{
+            border-radius: 6px;
+            width: 100px;
+            height: 25px;
+            background-color:red;
+            transition: background-color 1.5s;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <strong>This is strong text</strong><br>
-    H<sub>2</sub>O <br>
-    10<sup>2</sup><br>
-    <em>Hello world</em><br>
-    <mark>Hello world</mark><br>
-    <small>Small text</small><br>
-    <del>Hello world</del><br>
-    <ins>Hello world</ins><br>
-    <em><small>Hell boy</small></em><br>
-    <center> <img src="images.jpg" alt="godlike"></center>
-    <a style="border: 10px;" href="https://www.google.com">Google</a>
+   <center>
+    <div>
+        <h2>Fill the form and submit.</h2>
+        <form action="/submitted.html">
+            <label for="email">Email:</label><br>
+            <input type="email" class="email"><br>
+            <label for="pw">Password:</label><br>
+            <input type="password" name="pw" id="pw"><br>
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </div>
+   </center>
 </body>
 </html>
