@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in page</title>
+        <link rel="icon" type="image/x-icon" href="anonymous.ico">
+        <style>
+            form{
+                border-radius: 15px;
+                border:5px solid grey;
+                width: 250px;
+                height: 250px;
+                background-color: grey;
+                padding: 10px;
+                margin: 10px;
+            }
+            .switch{
+                border: 3px solid grey;
+                background-color: grey;
+                border-radius: 15px;
+                height: 25px;
+                width: 65px;
+            }
+            .switch:hover{
+                border-color: burlywood;
+                background-color: burlywood;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="index.html">
+            <label for="email" style="margin: 36px;">Email:</label><br>
+            <center><input type="email"><br></center>
+            <label for="gender" style="margin: 36px;">Gender:</label><br>
+            <center>
+                <select name="gender" id="morf">
+                    <option value="male">male</option>
+                    <option value="Female">Female</option>
+                    <option value="others">others</option>
+                </select><br>
+            </center>
+            <label for="username"style="margin: 36px;">Create username:</label><br>
+            <center><input type="username" value="Example$1"><br></center>
+            <label for="password" style="margin: 36px;">
+            <small>Create password: <br><center>(more than 8 characters)</center></small></label>
+            <center>
+                <input type="password" name="pw" id="pw"><br>
+                <input type="checkbox"> <mark>I am not a robot</mark><br>
+            </center>
+            <center>
+                <button type="submit" class="switch">Submit</button>
+            </center>
+        </form>
+    </body>
+</html>
