@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 11-index</title>
+    <style>
+        th{
+            background-color: grey;
+            border-radius: 8px;
+        }
+        td{
+            background-color:cadetblue;
+            border-radius: 8px;
+            border-color: blue;
+        }
+        .tabul{
+            border-color: gold;
+        }
+        td:hover{
+            background-color: black;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            transition:0.2s;
+            color: white;
+        }
+        th:hover{
+            background-color: aquamarine;
+        }
+        h1{
+            background-color: goldenrod;
+            border-radius: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1:hover{
+            background-color: yellow;
+            transition: 0.1s;
+            cursor: pointer;
+            border: 6px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Routine of batch 35'A</h1></center>
+    <table class="tabul" border="5">
+        <tr>
+            <th>time</th>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th style="background-color: red;">Saturday</th>
+        </tr>
+        <tr>
+            <td><small>7:00am-9:00am</small></td>
+            <td colspan="6"><small>Web dev</small></td>
+            <td rowspan="2">Holiday</td>
+        </tr>
+        <tr>
+            <td><small>9:00am-11:00am</small></td>
+            <td colspan="6"><small>digital forensic</small></td>
+        </tr>
+    </table>
+</body>
+</html>
