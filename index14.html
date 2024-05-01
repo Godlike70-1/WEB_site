@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5;
+            padding: 0;
+        }
+        h4{
+            background-color: green;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid;
+        }
+        h4:hover{
+            background-color: lightgreen;
+            border-radius: 15px;
+            transition: 2s;
+            cursor: pointer;
+        }
+        div{
+            display: inline;
+            background-color: darkgoldenrod;
+            color:bisque;
+        }
+        div:hover{
+            background-color: gold;
+            color: black;
+            transition: 2s;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .hw{
+            background-color: blueviolet;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 2px solid;
+        }
+        .hw:hover{
+            background-color: blue;
+            border-radius: 15px;
+            transition: 0.8s;
+            cursor: pointer;
+            color: chartreuse;
+        }
+        .hii{
+            background-color:darkcyan;
+            border:2px solid black;
+            border-radius: 15px;
+        }
+        .hii:hover{
+            background-color: rgb(3, 67, 67);
+            cursor:pointer;
+            transition: 0.9s;
+        }
+        table,th,td{
+            border-collapse: collapse;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 2px;
+        }
+        td{
+            background-color: rgb(157, 157, 161);
+        }
+        td:hover{
+            background-color: black;
+            color: white;
+            transition: 0.9s;
+            cursor: pointer;
+        }
+        th:hover{
+            background-color: darkgrey;
+            color: white;
+            transition: 0.9s;
+            cursor: pointer;
+        }
+        .Question{
+            background-color: rgb(32, 184, 184);
+            border: 2px solid;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center><h4>div and hover practices.</h4></center>
+    <center><div style="border: 2px solid gold;">I am</div>
+    <div style="border: 2px solid gold;">some one</div></center>
+    <marquee class="hw" behavior="scroll" direction="right">Hello world!</marquee>
+    <marquee class="hii" behavior="scroll" direction="left">Hii world</marquee>
+    <center>
+        <table>
+            <caption>Group 1</caption>
+            <tr>
+                <th style="background-color:rgb(23, 132, 228)">FC</th>
+                <th style="background-color: rgb(11, 150, 155);">goals</th>
+                <th style="background-color: rgb(17, 241, 17);">W</th>
+                <th style="background-color: rgb(249, 5, 5);">L</th>
+                <th style="background-color: grey">D</th>
+                <th style="background-color: chocolate;">pts</th>
+            </tr>
+            <tr>
+                <td>Bayern</td>
+                <td>10</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>09</td>
+            </tr>
+            <tr>
+                <td>Real Madrid</td>
+                <td>5</td>
+                <td>2</td>
+                <td>1</td>
+                <td>0</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Dortmund</td>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Arsenal</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </center>
+    <center><h5 class="Question">Who will win champions league?</h5></center>
+</body>
+</html>
