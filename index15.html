@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        .file_upload{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form  action="myform.html" method="POST">
+            <label for="fname">First Name</label><br>
+            <input type="text" name="fname" id="fname"><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password"><br>
+            <label for="date">date</label><br>
+            <input type="date" id="date"><br>
+            <label for="male">male</label>
+            <input type="radio" name="gen" id="male">
+            <label for="female">female</label>
+            <input type="radio" name="gen" id="female">
+            <button type="submit">Submit</button>
+            <label for="reset"></label>
+            <input type="reset" value="Refill" name="reset" id="reset"><br>
+            <label for="file">upload file:</label>
+            <input class="file_upload" type="file" name="file" id="file" value="upload ">
+        </form>
+    </center>
+</body>
+</html>
