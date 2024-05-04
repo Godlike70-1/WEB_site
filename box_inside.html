@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxout{
+            display: contents;
+            border: 2px solid;
+        }
+        .boxin{
+            background: rebeccapurple;
+        }
+        p{
+            border: 2px solid green;
+            background-color: grey;
+        }
+        .flow{
+            display: flow-root;
+            background-color: green;
+        }
+        .not{
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            border-radius: 7px;
+            background-color: lightgreen;
+        }
+        .not_1{
+            text-align: center;
+            border: 2px solid;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="boxout">
+        Hello boys
+        <div class="boxin">
+            Hello girls
+            <p>hello everyone!!</p>
+        </div>
+    </div>
+    <div class="flow">
+        flow roots
+        <div class="not">
+            not the flow
+            <div class="not_1">
+                another div
+            </div>
+        </div><hr>
+        <center> <h4>Explain your opinion and submit</h4></center>
+        <center><textarea placeholder="Write your thoughts here" name="opini" id="opinion" cols="50" rows="10"></textarea></center>
+        <form action="inside.html">
+            <center><button type="submit">submit</button></center>
+        </form>
+    </div>
+</body>
+</html>
