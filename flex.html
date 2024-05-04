@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .here{
+            background-color:white;
+            margin-inline: 50px;
+            border: 2px solid black;
+            width: 100%;
+            width: 820px;
+            gap: 10px;
+            height: 340px;
+            display: flex;
+        }
+        .img{
+            min-width: 70px;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            flex-grow: 1;
+            transition: flex-grow 0.5s ease;
+        }
+        .img:hover{
+            flex-grow: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="here">
+        <img class="img" src="dota_background_image.jpg" alt="">
+        <img class="img" src="dota_background_image.jpg" alt="">
+        <img class="img" src="dota_background_image.jpg" alt="">
+        <img class="img" src="dota_background_image.jpg" alt="">
+        <img class="img" src="dota_background_image.jpg" alt="">
+    </div>
+</body>
+</html>
