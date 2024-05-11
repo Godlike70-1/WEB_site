@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sume{
+            background-color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid;
+            width: 200px;
+            border-radius: 10px;
+        }
+        button{
+            background-color: rgb(9, 241, 9);
+            border: 0px;
+            width: 100px;
+            border-radius: 20px;
+            height: 20px;
+        }
+        button:hover{
+            background-color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            cursor: pointer;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Enter integer"><br>
+    <input type="number" id="num2" placeholder="Enter integer"><br>
+    <button onclick=add()>add</button>
+    <p id="sume"></p>
+    <script>
+        function add(){
+            var num1=parseFloat(document.getElementById('num1').value)
+            var num2=parseFloat(document.getElementById('num2').value)
+            let sum=num1+num2;
+            if((isNaN(num1))||(isNaN(num2))){
+                document.getElementById('sume').innerText = 'Invalid input!! please enter integers or NUMBERS'
+            }else{
+                document.getElementById('sume').innerText='esss:'+sum;
+            }
+        }
+    </script>
+</body>
+</html>

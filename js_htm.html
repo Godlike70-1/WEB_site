@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .container{
+            background-color: rgb(44, 40, 40);
+           width: 250px;
+           border: 2px solid;
+           height: 100%;
+           border-radius: 20px;
+        }
+        #FirstName{
+            margin: 10px;
+            height: 30px;
+            background-color: burlywood;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #Last_name{
+            margin: 10px;
+            height: 30px;
+            background-color: burlywood;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #overall{
+            background-color: red;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 200px;
+            border-radius: 15px;
+            /* height: 25px; */
+        }
+        #call{
+            background-color: greenyellow;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            width: 200px;
+            border-radius: 15px;
+            font-weight: 800;
+        }
+        button{
+            height: 30px;
+            width: 75px;
+            border-radius:20px;
+            background-color: red;
+            font-weight: 800;
+            border: 0px;
+        }
+        button:hover{
+            background-color: rgb(17, 219, 17);
+            transition: 0.7s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <input type="text" placeholder="Enter name" id="FirstName"><br>
+            <input type="text" placeholder="Enter Last name" id="Last_name"><br>
+            <button onclick="name_call()">Click</button><br>
+            <b><p id="overall"></p></b>
+            <b><p id="call"></p></b>
+        </div>
+    </center>
+    <script>
+        function name_call(){
+            let name = document.getElementById('FirstName').value;
+            let lowcase=name.toLowerCase();
+            let lname = document.getElementById('Last_name').value;
+            let fullname = name + " " + lname;
+            if(lowcase==='manzil'){
+                document.getElementById('overall').innerText="Invalid input"
+            }else if(lowcase==='' || lname ===''){
+                document.getElementById('overall').innerText="Please enter something before clicking click button!!!"
+            }else{
+                document.getElementById('call').innerText = 'CHAKKA!!! ' + fullname;
+            }
+        }
+    </script>
+</body>
+
+</html>
