@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form-to-submit</title>
+    <title>day1</title>
+    <link rel="icon" type="x-image/x-icon" href="logo.ico">
     <style>
-        img{
-            float: right;
-            margin-right: 10px;
+        .cool {
+            border: 3px solid red;
+            height: 40px;
+            width: 100%;
+            letter-spacing: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
         }
-        form{
-            background-color:cadetblue;
-            border: 2px solid black;
+        p::selection {
+            background-color: rgba(142, 28, 28, 0.6);
+            color: blueviolet;
         }
-        .submit{
-            background-color: aquamarine;
-            border-radius: 6px;
-            width: 100px;
-            height: 25px;
+        ::marker{
+            color: red;
         }
-        .submit:hover{
-            border-radius: 6px;
-            width: 100px;
-            height: 25px;
-            background-color:red;
-            transition: background-color 1.5s;
-            cursor: pointer;
-        }
+        /* ::marker{
+            
+        } */
     </style>
 </head>
+
 <body>
-   <center>
-    <div>
-        <h2>Fill the form and submit.</h2>
-        <form action="/submitted.html">
-            <label for="email">Email:</label><br>
-            <input type="email" class="email"><br>
-            <label for="pw">Password:</label><br>
-            <input type="password" name="pw" id="pw"><br>
-            <button type="submit" class="submit">Submit</button>
-        </form>
-    </div>
-   </center>
+    <h1 class="cool">Spaces</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti nam alias corrupti, distinctioprovident recusandae, at pariatur quae animi, sed <span class="ikno">HELLO WORLD</span> adipisci quasi dolorereprehenderit velit iusto temporibus tempore eos.</p>
+    <ol class="red">
+        <li>List1</li>
+        <li>List2</li>
+        <li>List2</li>
+        <li>List2</li>
+        <li>List2</li>
+        <li>List2</li>
+    </ol>
+    <ul></ul>
 </body>
+
 </html>
