@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange Event Example</title>
+    <style>
+        .frm{
+            width: 200px;
+            border-radius: 20px;
+            background-color: rgb(0, 0, 0);
+
+        }
+        #fn,
+        #ln,
+        #ob,
+        #mail {
+            margin: 10px;
+            border: 2px solid grey;
+            border-radius: 15px;
+            width: 170px;
+            height: 25px;
+            background-color: rgb(224, 214, 214);
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #btn{
+            margin: 10px;
+            height: 25px;
+            width: 80px;
+            border-radius: 17px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(11, 181, 237);
+        }
+        #btn:hover{
+            background-color: rgb(89, 199, 236);
+            transition: 0.8s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form class="frm" action="">
+            <input type="text" placeholder="First Name" id="fn"><br>
+            <input type="text" placeholder="Last Name" id="ln"><br>
+            <input type="date" placeholder="Date of Birth" id="ob"><br>
+            <input type="email" placeholder="Email" id="mail"><br>
+            <button id="btn" onclick="clicker()">Click</button>
+        </form>
+    </center>
+    <p id="out"></p>
+    <p id="dob"></p>
+    <p id="email"></p>
+    <script>
+        function clicker() {
+            var fn = document.getElementById("fn").value;
+            var ln = document.getElementById("ln").value;
+            var dob = document.getElementById("ob").value;
+            var email = document.getElementById("mail").value;
+            document.getElementById("out").innerHTML = "hello " + fn + " " + ln;
+            document.getElementById("dob").innerHTML = "your dob is:" + dob;
+            document.getElementById("email").innerHTML = "You entered:" + email;
+        }
+    </script>
+</body>
+
+</html>
