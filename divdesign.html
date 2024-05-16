@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outside{
+            background:url();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 2px solid;
+            width: 200px;
+            height: 300px;
+            margin-top: 100px;
+            margin-left: 200px;
+            border-radius:18px;
+            background-color: rgb(235, 208, 208);
+        }
+        .inside{
+            margin: 30px;
+            width: 400px;
+            border: 0px solid;
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 2px;
+            background: url(forest.jpeg);
+            backdrop-filter: brightness(30%);
+        }
+        nav{
+            margin-top: 200px;
+            width: 900px;
+            background-color: aqua;
+        }
+        form{
+            margin: 30px;
+            color: white;
+        }
+        #loger{
+            margin-left: 40px;
+            margin-top: 5px;
+            width: 100px;
+            height: 25px;
+            border-radius: 15px;
+            border: 0px solid;
+            background-color: black;
+            color: aliceblue;
+            font-weight: 500;
+        }
+        #loger:hover{
+            background-color: rgb(41, 37, 37);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #user{
+            border-radius: 15px;
+            border:0px solid;
+            height: 25px;
+        }
+        #passs{
+            border-radius: 15px;
+            border:0px solid;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outside">
+        <div class="inside">
+            <form action="demo.html">
+                <h2>LOG IN</h2>
+                <label for="text">Username:</label>
+                <input type="text" id="user">
+                <label for="password">Password:</label>
+                <input type="password" id="passs">
+                <button id="loger">LOG IN</button>
+            </form>
+        </div>
+    </div>
+    <nav>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, praesentium a nobis suscipit beatae repellat culpa error iusto, odio facilis optio dolorem neque consequatur rem necessitatibus repellendus est expedita itaque?</nav>
+    <div style="background-color: aqua; text-align: justify; margin: 10px; border-radius: 15px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ab iusto atque natus sit cumque accusamus numquam quas tempora autem, obcaecati cum? Fuga placeat quo eaque nam consequuntur ipsum! Similique?</div>
+</body>
+</html>
