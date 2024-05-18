@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            height: 300px;
+            background-color: skyblue;
+        }
+        aside {
+            width: 200px;
+            height: 500px;
+            background-color: #ddd;
+            padding: 20px;
+        }
+        main {
+            display: flex;
+            flex: 1;
+        }
+        div {
+            flex: 1;
+            padding: 20px;
+        }
+        footer {
+            height: 200px;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .head_p{
+            color: white;
+            margin: 10px;
+        }
+        nav{
+            display:flex;
+            width: 100%;
+            height: 90px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav></nav>
+        <h1>Forest:</h1>
+        <p class="head_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nobis a. Beatae tempora, quidem nesciunt possimus ipsum alias consequatur illo recusandae ratione iusto. Commodi officiis soluta nemo id quas adipisci!</p>
+        <img width="200px" height="200px" src="forest_logo.ico" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente, sunt ad ratione repellendus ullam quia atque nisi maxime natus ex inventore quas debitis ab quo molestiae. Error, doloremque corrupti?</p>
+    </header>
+    <main>
+        <aside>
+            <h2>Aside</h2>
+            <p>This is the aside content.</p>
+        </aside>
+        <div>
+            <h2>Main Content</h2>
+            <p>This is the main content.</p>
+        </div>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+        <p>This is the footer content.</p>
+    </footer>
+</body>
+</html>
