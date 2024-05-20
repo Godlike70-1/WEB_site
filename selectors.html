@@ -8,22 +8,62 @@
     <style>
         body {
             background-color: burlywood;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         header {
-            display: flex;
-            flex-direction: column;
-            height: 200px;
             background-color: bisque;
             border-radius: 20px;
-            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        header nav {
+            background-color: darkkhaki;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        header h3 {
+            margin: 0;
+            padding: 5px 10px;
+            background-color: chocolate;
+            border-radius: 10px;
+        }
+
+        header nav div {
+            display: flex;
+            margin-left: auto;
+        }
+
+        header nav button {
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 20px;
+            background-color: cadetblue;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        header nav button:hover {
+            background-color: darkcyan;
+        }
+
+        header .here {
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 10px;
         }
 
         main {
             display: flex;
             margin: 10px;
             border-radius: 20px;
-            flex: 1;
         }
 
         aside {
@@ -32,6 +72,7 @@
             border-radius: 20px;
             margin: 5px;
             width: 200px;
+            padding: 10px;
         }
 
         article {
@@ -40,58 +81,25 @@
             margin: 5px;
             height: 500px;
             border-radius: 20px;
+            padding: 10px;
         }
+
         footer {
             height: 200px;
             background-color: darkcyan;
             border-radius: 20px;
-            margin-right: 10px;
-            width: 100%;
-        }
-
-        header>nav {
-            height: 50px;
-            background-color: darkkhaki;
-            width: 100%;
-            margin: 20px;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
-        }
-
-        h3 {
             margin: 10px;
-            margin-top: 10px;
-            padding-top: 5px;
-            border-radius: 10px;
-            height: 30px;
-            background-color: chocolate;
-        }
-
-        nav div {
-            display: flex;
-            margin-left: auto;
-        }
-
-        .click1 {
-            margin: 10px;
-            width: 75px;
-            border-radius: 20px;
-            border: 0px;
-            font-weight: 700;
-            background-color: cadetblue;
-            height: 30px;
+            padding: 10px;
+            text-align: center;
+            color: white;
         }
 
         .topic {
             text-align: center;
             background-color: aqua;
             border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 0px;
-            margin-left: 5px;
-            margin-right: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
         }
 
         .content {
@@ -99,7 +107,7 @@
             margin: 7px;
             background-color: coral;
             border-radius: 10px;
-            padding: 5px;
+            padding: 10px;
         }
 
         .nd_p {
@@ -109,13 +117,6 @@
             border-radius: 15px;
             padding: 10px;
             color: white;
-        }
-
-        .here {
-            background-color: lightgray;
-            border-radius: 10px;
-            margin: 20px;
-            padding: 10px;
         }
     </style>
 </head>
@@ -136,13 +137,14 @@
     </header>
     <main>
         <aside>
-            <h1 class="topic">Topic</h1><br>
+            <h1 class="topic">Topic</h1>
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magnam sunt aspernatur doloribus magni quia temporibus, iure veniam dignissimos iusto? Dignissimos harum illo cumque laborum esse, nihil aliquam quia fuga.</p>
-            <p class="nd_p">last content of article i cant write something very well so please read till here nothing to say.</p>
         </aside>
         <article></article>
     </main>
-    <footer></footer>
+    <footer>
+        Footer content goes here.
+    </footer>
 </body>
 
 </html>
