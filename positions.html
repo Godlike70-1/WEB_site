@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{
+            position: static;
+            background-color: blue;
+        }
+        .relative{
+            position: relative;
+            background-color: grey;
+        }
+        .fixed{
+            position: fixed;
+            right: 0px;
+            background-color: red;
+        }
+        .absolute{
+            position: absolute;
+            background-color: aqua;
+        }
+        h1.sticky{
+            position: sticky;
+            background: green;
+            width: 100%;
+        }
+        p.sticky{
+            position: sticky;
+            background: green;
+            width: 100%;
+            top: 0px;
+        }
+        body{
+            background-image: linear-gradient(to left,red,green,blue,white,purple);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="static">Static</h1>
+    <h1 class="relative">Relative</h1>
+    <h1 class="fixed">Fixed</h1>
+    <h1 class="absolute">absolute</h1>
+    <h1 class="sticky">Sticky</h1>
+    <p class="sticky">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ducimus, voluptate voluptatem autem quo a voluptates mollitia magni perferendis reprehenderit ipsum officia sapiente quod. Itaque perferendis blanditiis qui saepe ipsum!
+    </p>
+    <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<fieldset>
+    <legend class="sr-only">Checkboxes</legend>
+  
+    <div class="divide-y divide-gray-200 dark:divide-gray-700">
+      <label for="Option1" class="flex cursor-pointer items-start gap-4 py-4">
+        <div class="flex items-center">
+          &#8203;
+          <input
+            type="checkbox"
+            class="size-4 rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:ring-offset-gray-900"
+            id="Option1"
+          />
+        </div>
+  
+        <div>
+          <strong class="font-medium text-gray-900 dark:text-white"> John Clapton </strong>
+  
+          <p class="mt-1 text-pretty text-sm text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+      </label>
+  
+      <label for="Option2" class="flex cursor-pointer items-start gap-4 py-4">
+        <div class="flex items-center">
+          &#8203;
+          <input
+            type="checkbox"
+            class="size-4 rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:ring-offset-gray-900"
+            id="Option2"
+          />
+        </div>
+  
+        <div>
+          <strong class="font-medium text-gray-900 dark:text-white"> Peter Mayer </strong>
+  
+          <p class="mt-1 text-pretty text-sm text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto!
+          </p>
+        </div>
+      </label>
+  
+      <label for="Option3" class="flex cursor-pointer items-start gap-4 py-4">
+        <div class="flex items-center">
+          &#8203;
+          <input
+            type="checkbox"
+            class="size-4 rounded border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:ring-offset-gray-900"
+            id="Option3"
+          />
+        </div>
+  
+        <div>
+          <strong class="font-medium text-gray-900 dark:text-white"> Eric King </strong>
+  
+          <p class="mt-1 text-pretty text-sm text-gray-700 dark:text-gray-200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, mollitia.
+          </p>
+        </div>
+      </label>
+    </div>
+  </fieldset>
+</body>
+</html>
