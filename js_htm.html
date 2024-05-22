@@ -60,6 +60,16 @@
             transition: 0.7s;
             cursor: pointer;
         }
+        h1{
+            transform: rotate(45deg);
+            transform: scale(2);
+            transform: translate(1);
+            animation:play 5s infinite;
+        }
+        @keyframes play {
+            from(background-color: red;)
+            to(background-color: green;)
+        }
     </style>
 </head>
 
@@ -73,6 +83,7 @@
             <b><p id="call"></p></b>
         </div>
     </center>
+    <h1>Header</h1>
     <script>
         function name_call(){
             let name = document.getElementById('FirstName').value;
