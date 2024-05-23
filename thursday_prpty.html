@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            transition-property: background-color,color;
+            transition-duration:0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay:0s;
+        }
+        p:hover{
+            background-color: red;
+            color: white;
+            width: 100px;
+        }
+        button{
+            transition-property:all;
+            transition-duration:0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay:0s;
+            background-color: yellow;
+            width: 90px;
+            border: 0px ;
+            height: 30px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        button:hover{
+            background-color: red;
+            color: white;
+            width: 100px;
+            cursor: pointer;
+        }
+        #_{
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+            width: 200px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .lower_text{
+            background-color: grey;
+            width: 100%;
+            height: 50px;
+            margin-top: 700px;
+            text-align: center;
+            padding-top: 30px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure deserunt quis eveniet, omnis vel beatae minus, rem voluptatum blanditiis qui laboriosam labore, nobis ex alias molestiae natus sequi aliquid!</p>
+    <button id="#" onclick="printer()" type="submit">Button</button>
+    <p id="_"></p>
+    <script>
+        function printer(){
+            let btn = document.getElementById("#").value
+            document.getElementById("_").innerHTML = "Hello boys"
+        }
+    </script>
+    <footer class="lower_text">All rights reserved <span class="lower_text">&#169</span></footer>
+</body>
+</html>
