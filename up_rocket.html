@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:grey;
+        }
+        header{
+            display: flex;
+            border: 0px solid black;
+            height: 250px;
+            width: 100%;
+            border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            background: url(head.jpeg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            backdrop-filter: brightness(100%);
+        }
+        header > .head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            border: 2px solid;
+            width: 75%;
+            height: 50px;
+            border-radius: 30px;
+            padding: 10px;
+            backdrop-filter: blur(60%);
+            box-shadow: 0px 0px 30px rgba(50, 247, 109, 0.5);
+            border: 2px solid rgba(51, 104, 218, 1);
+        }
+        .clicks{
+            margin: 10px;
+            height: 30px;
+            background-color:rgba(93, 228, 52, 0.6);
+            border: 0px;
+            border-radius: 30px;
+            backdrop-filter: blur(60%);
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .clicks:hover{
+            background-color: rgb(89, 146, 89);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="head">
+            <button class="clicks" type="menu">Visit forest</button>
+            <button class="clicks" type="menu">Visit us</button>
+            <button class="clicks" type="menu">Save forest</button>
+            <button class="clicks" type="menu">contact us</button>
+        </nav>
+    </header>
+    <main>
+        <div></div>
+    </main>
+</body>
+</html>
