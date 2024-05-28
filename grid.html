@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_demo</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 70px 70px 70px 70px 70px 70px;
+            /* grid-template-columns: 100px 100px 100px 100px 100px; */
+            gap: 10px;
+            border-radius: 30px;
+            background-color: darkcyan;
+            width: 100%;
+        }
+        .fst{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            color: darkblue;
+            background-color: lightblue;
+            /* width: 100px; */
+        }
+        .snd{
+            padding: 5px;
+            margin: 10px;
+            border-radius: 20px;
+            background-color: darkblue;
+            color: lightblue;
+            /* width: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fst">
+            <span>first</span>
+        </div>
+        <div class="snd">
+            <span>Second</span>
+        </div>
+        <div class="snd">
+            <span>Second</span>
+        </div>
+        <div class="snd">
+            <span>Second</span>
+        </div>
+        <div class="snd">
+            <span>Second</span>
+        </div>
+    </div>
+</body>
+</html>
