@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculator(){
+            var num = document.getElementById("num").value ;
+            var num1 = document.getElementById("num1").value;
+            var ans = num + num1;
+            var a = "the addition is: ", ans;
+            document.getElementById("display").innerHTML = a;
+        }
+    </script>
+    <div>
+        <form action="">
+            <input id="num" type="number"><br>
+            <input id="num1" type="number"><br>
+            <button onclick="calculator()" id="calculate" type="submit">Button</button><br>
+        </form>
+    </div>
+    <p id="display"></p>
+</body>
+</html>

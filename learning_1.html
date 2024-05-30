@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            width: 100%;
+            border: 2px solid red;
+            color: darkgreen;
+            background-color: skyblue;
+        }
+
+        #hack {
+            background-color: black;
+            color: green;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+        }
+        #here{
+            font-weight: 600;
+            background-color: red;
+            width: 100px;
+            border: 0px solid;
+            border-radius: 60px;
+            padding: 10px;
+            animation: animate_button 0.9s ease-in 0.9s infinite;
+        }
+        .anima{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-columns: 0;
+            margin: 0;
+        }
+        .inside{
+            animation: bouncer 0.7s ease-in-out 0.2s infinite ;
+        }
+        @keyframes bouncer {
+            0%{
+                margin-top:0px;
+            }
+            25%{
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        alert("hi dude")
+    </script>
+    <h1>header</h1>
+    <button type="button" onclick="document.write(10+10)">click to check the result</button>
+    <h3>Want to print the current page? click this button!</h3>
+    <button type="button" onclick="window.print()">Print</button>
+    <p id="demo"></p>
+    <div id="hack">
+        <div id="inner">
+            <button id="here" type="button" onclick="cool()">Show some cool stuffs</button>
+            <marquee id="cool" behavior="slide" direction="left" ></marquee>
+        </div>
+    </div>
+    <script>
+        document.write(5 + 6)
+        console.log(10)
+        document.getElementById("demo").innerHTML =
+            "Hello world This is made from java script magic!!";
+        function cool() {
+            document.getElementById("here").value;
+            document.getElementById("here").innerHTML = 
+            "COOL STUFFS";
+        }
+    </script>
+    <div class="anima">
+        <div class="inside">Hii</div><br>
+    </div>
+</body>
+</html>
