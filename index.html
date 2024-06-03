@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day1</title>
-    <link rel="icon" type="x-image/x-icon" href="logo.ico">
+    <title>Document</title>
     <style>
-        .cool {
-            border: 3px solid red;
-            height: 40px;
-            width: 100%;
-            letter-spacing: 10px;
-            text-align: center;
-            background-color: black;
-            color: white;
+        #demo{
+            background-color: grey;
+            width: 250px;
+            height: 250px;
         }
-        p::selection {
-            background-color: rgba(142, 28, 28, 0.6);
-            color: blueviolet;
-        }
-        ::marker{
-            color: red;
-        }
-        /* ::marker{
-            
-        } */
     </style>
 </head>
-
 <body>
-    <h1 class="cool">Spaces</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti nam alias corrupti, distinctioprovident recusandae, at pariatur quae animi, sed <span class="ikno">HELLO WORLD</span> adipisci quasi dolorereprehenderit velit iusto temporibus tempore eos.</p>
-    <ol class="red">
-        <li>List1</li>
-        <li>List2</li>
-        <li>List2</li>
-        <li>List2</li>
-        <li>List2</li>
-        <li>List2</li>
-    </ol>
-    <ul></ul>
-</body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        const person = {
+            name : "john",
+            age : 50,
+            place : "New York"
+        };
+        // const mya = Object.keys(person);
+        // document.getElementById("demo").innerHTML = mya
+        let text = " ";
+        for(let [a,b] of Object.entries(person)){
+            text += a + ": " + b + "<br>";
+        };
+        document.getElementById("demo").innerHTML = text;
 
+        let str = JSON.stringify(person);
+        document.getElementById("demo1").innerHTML = str;
+    </script>
+
+</body>
 </html>
