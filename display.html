@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const person1 = {
+            profile : "Manzil",
+            age : 25,
+            batch : "35'A",
+            address : "Kirtipur"
+        };
+        document.getElementById("demo").innerHTML = "my age is "+ person1.age;
+        let text = " ";
+        for (let x in person1){
+            text += "" + person1[x] + " ";
+        }
+        document.getElementById("demo").innerHTML ="person1 info includes:" + text
+    </script>
+</body>
+</html>
