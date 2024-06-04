@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="topic"></h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button onclick="fnc()">click here to display car name</button>
+    <script>
+        const car = {
+            name : "mercedes",
+            price : "$3.5m"
+        };
+        let text = Object.values(car);
+        document.getElementById("demo").innerHTML = text;
+        
+        let emp = "";
+        for (let [a,b] of Object.entries(car)){
+            emp += `the ${a} of car is ${b} <br>`;
+        };
+        document.getElementById("demo1").innerHTML= emp;
+
+        function fnc(){
+            document.getElementById("topic").innerHTML = car.name;
+        }
+    </script>
+</body>
+</html>

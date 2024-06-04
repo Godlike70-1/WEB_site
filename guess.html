@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+</head>
+<body>
+    <div id="game">
+        <h1>Guess the car</h1>
+        <p>
+            <ul>
+                <li>A-Class, C-Class, E-Class, S-Class, CLA, CLS, GLA, GLC, GLE, GLS, and the EQ <br></li>
+            <li>
+                It's headquarter is in Stuttgart, Baden-Württemberg, Germany. <br>
+            </li>
+            <li>Founded by karl Benz Gottlieb Daimler <br></li>
+            <li>luxury <br></li>
+            </ul>
+        </p>
+        <input type="text" name="" id="carname"><br>
+        <button onclick="display()">Check to display car</button><br>
+        <p id="ans"></p><br>
+        <script>
+            function display(){
+                let names = document.getElementById("carname").value;
+                let a= names.toLowerCase();
+                if(a === "mercedes"){
+                document.getElementById("ans").innerHTML = "Yes, the guess was correct";
+                }else{
+                    document.getElementById('ans').innerHTML = "Nope! the guess wasnt correct";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
