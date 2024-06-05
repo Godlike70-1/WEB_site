@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="one"><br>
+    <input type="number" id="two"><br>
+    <button onclick="disp()" id="bt">click to add</button>
+    <p id="demo"></p>
+    <script>
+        function disp(){
+            document.getElementById("bt").value;
+            let inpone = parseFloat(document.getElementById("one").value);
+            let inptwo = parseFloat(document.getElementById("two").value);
+            let result = inpone + inptwo;
+            document.getElementById("demo").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
