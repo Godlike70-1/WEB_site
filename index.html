@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #demo{
-            background-color: grey;
-            width: 250px;
-            height: 250px;
-        }
-    </style>
+    <title>How to construct object</title>
 </head>
 <body>
+    <h1>Lets check info about person by clicking button</h1>
+    <button onclick="age()" id="btn">Check age</button>
+    <button onclick="address()" id="btn">Check address</button>
+    <button onclick="fn()" id="btn">Check firstname</button>
+    <button onclick="ln()" id="btn">Check lastname</button>
+    <input type="number" id="ager">
     <p id="demo"></p>
-    <p id="demo1"></p>
+    <button onclick="he()">Check</button>
+    <p id="demo2"></p>
     <script>
-        const person = {
-            name : "john",
-            age : 50,
-            place : "New York"
-        };
-        // const mya = Object.keys(person);
-        // document.getElementById("demo").innerHTML = mya
-        let text = " ";
-        for(let [a,b] of Object.entries(person)){
-            text += a + ": " + b + "<br>";
-        };
-        document.getElementById("demo").innerHTML = text;
-
-        let str = JSON.stringify(person);
-        document.getElementById("demo1").innerHTML = str;
+        function person(first,last,age,address){
+            this.address = address;
+            this.fn = first;
+            this.las = last;
+            this.age = age;
+        }
+        let myfriend = new person(" Hari"," Ram",10," kathmandu");
+        function age(){
+            demo.innerHTML = "My friend's age is:"+myfriend.age;
+        }
+        function address(){
+            demo.innerHTML = "My friend's address is:" + myfriend.address;
+        }
+        function fn(){
+            demo.innerHTML = "My friend's first name is:" + myfriend.fn;
+        }
+        function ln(){
+            demo.innerHTML = "My friend's address is:" + myfriend.las;
+        }
+        let age1 = ager.value;
+        function he(){
+            age1=18;const isadule = (age >=18)? demo2.innerHTML("Yes, your able to vote"): demo2.innerHTML("no, not able to vote");
+        }
     </script>
-
 </body>
 </html>
