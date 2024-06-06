@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            /* padding: 10px; */
+        }
+        #demo{
+            background-color: grey;
+            color: burlywood;
+            height: 0px;
+        }
+        #btn{
+            width: 100px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <input placeholder="First Name" type="text" id="fn"><br>
+    <input placeholder="Last Name" type="text" id="ln"><br>
+    <input placeholder="Age" type="number" id="Age"><br>
+    <input placeholder="address" type="text" id="address"><br>
+    <button id="btn" onclick="displ()">click</button><br>
+    <p id="demo"></p>
+    <script>
+        function displ(){
+            let a = document.getElementById("fn").value;
+            let b = document.getElementById("ln").value;
+            let c = document.getElementById("Age").value;
+            let d = document.getElementById("address").value;
+            function person(name,lastname,age,address){
+                this.fn = name;
+                this.ln = lastname;
+                this.age = age;
+                this.address = address;
+                this.wholeinfo = function(){
+                    return `First name is :${this.fn} <br> Last name is: ${this.ln} <br> Age is: ${this.age} <br> Address is: ${this.address}`
+                };
+            }
+            const person1 = new person(a,b,c,d);
+            document.getElementById("demo").innerHTML = person1.wholeinfo(); 
+        }
+    </script>
+</body>
+</html>
