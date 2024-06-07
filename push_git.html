@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="fullname">
+        <input type="number" id="age">
+        <input type="text" id="address">
+    </form>
+    <button id="btn" onclick="func()">CLick this</button>
+    <p id="demo"></p>
+    <script>
+        function func(){
+            let fn = document.getElementById("fullname").value;
+            let age = document.getElementById("age").value;
+            let address = document.getElementById("address").value;
+            function person(fn,age,address){
+                this.fullname = fn;
+                this.age = age;
+                this.address = address;
+                this.wholeinfo = function(){
+                    return `${this.fullname} <br> ${this.age} <br> ${this.address}`
+                }
+            }
+            let p = new person(fn,age,address);
+            document.getElementById("demo").innerHTML = p.wholeinfo()
+        }
+    </script>
+</body>
+</html>
