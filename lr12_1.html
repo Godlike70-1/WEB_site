@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let a = parseInt(prompt("Enter 1st num:"));
+        let b = parseInt(prompt("enter 2nd num:"));
+        let c = parseInt(prompt("enter 3rd num:"));
+        if(a>b && a>c){
+            document.getElementById("demo").innerHTML = `${a} is greater which is a`;
+        }else if(b>a && b>c){
+            document.getElementById("demo").innerHTML = `${b} is greater which is b`;
+        }else{
+            document.getElementById("demo").innerHTML = `${c} is greter which is c`;
+        }
+    </script>
+</body>
+</html>
