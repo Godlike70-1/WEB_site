@@ -4,28 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            background-color: burlywood;
-            width: 500px;
-        }
-        img{
-            width: 100px;
-            aspect-ratio: 3/2;
-            object-fit: contain;
-            mix-blend-mode: color-burn;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="ai">
-            <h1>AI:</h1>
-        <img src="ai.jpeg" alt="">
-        </div>
-        <img src="dota.jpeg" alt="">
-        <img src="oneplus.jpeg" alt="">
-        <img src="apple.jpeg" alt="">
-    </div>
+    <input id="pw" type="password" placeholder="Enter something"><br>
+    <button onclick="login()">login</button>
+    <p id="demo"></p>
+    <script>
+        function login(){
+            let a = pw.value;
+            if(a==="manzil"){
+                demo.innerHTML = "logging in"
+            }else{
+                demo.innerHTML = "wrong password"
+            } 
+        }
+    </script>
 </body>
 </html>
