@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 2px solid;
+            width: 250px;
+            height: 300px;
+        }
+        input{
+            margin: 20px;
+            height: 30px;
+            width: 200px;
+            padding:20;
+            padding-left: 10px;
+        }
+        button{
+            margin-left:50px;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function getdata(){
+            let name = document.forms[0]["fname"].value;
+        }
+    </script>
+    <form onsubmit="getdata()" action="">
+        <input type="text" name="" id="fname"><br>
+        <input type="text" name="" id="lname"><br>
+        <button>submit</button>
+    </form>
+</body>
+</html>
