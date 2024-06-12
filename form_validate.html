@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validate</title>
+    <style>
+        form{
+            margin: 10px;
+            padding: 10px;
+        }
+        #fname,#lname,button{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function getdaata(){
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            if(fname==="" && lname===""){
+                alert("Havent entered anything yer");
+            }else{
+                let display_data = `Hello ${fname} ${lname}`;
+            }
+            document.write(display_data);
+        }
+    </script>
+    <form action="" onsubmit="return getdaata()">
+        <input type="text" id="fname" placeholder="First Name"><br>
+        <input type="text" id="lname" placeholder="Last Name"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
